@@ -1,0 +1,138 @@
+/* BODY AND OVER-ALL HTML CONTENT STYLING FOR ALL SIZES *************************************************/
+@media (max-width: 796px){
+
+
+html{
+   font-family: 'Source Sans Pro', sans-serif;
+   font-height: 140px;
+   font-size: 68.7%; 
+   padding: 0;
+   margin: 0;  
+}
+
+body{
+   padding: 0;
+   margin: 0;
+
+   background-color: #fff;
+}
+
+img{
+   max-width: 100%;
+}
+
+.green{
+   background-color: #8dd42d;
+}
+
+.red{
+   background-color: #f20;
+}
+
+.invisible{
+   display: none;
+}
+
+#fixedBar img{
+   display: block;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.temp{
+   padding: 0;
+   margin: 0;
+   display: inline;
+}
+
+#fixedBar {
+   color: #fff;
+   background-color: #1bf;
+   margin: 0;
+   padding-top: 1%;
+   padding-bottom: 1%;
+}
+
+.structure h2{
+   text-align: left;
+   color: #fff;
+   background-color: #1b1b1b;
+   margin: 0;
+   padding-left: 5%;
+   font-size: 3em;
+   padding-top: 1%;
+   padding-bottom: 1%;
+}
+
+.thermoNameBar h2,
+.co2NameBar h2{
+   color: #fff;
+   background-color: #8dd42d;
+   text-align: center;
+   font-size: 3em;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   margin: 0;
+   font-weight: 900;
+   border-bottom: #000 solid 5pt;
+   border-top: #000 solid 5pt;
+}
+
+.thermoNameBar,
+.co2NameBar{
+  margin-bottom: 8%;
+   
+}
+
+.emergencyHeat,
+.batteryPower,
+.thermoOffLine,
+.smokeAlarm,
+.co2OffLine,{
+   -ms-transform: scale(.68); /* IE 9 */
+    -webkit-transform: scale(.68); /* Chrome, Safari, Opera */
+    transform: scale(.68);
+    margin-left: 4%;
+}
+
+.emergencyHeat,{
+   padding-top: 2%;
+   margin-left: 4%;
+}
+
+.thermoOffLine,
+.co2OffLine,{
+   padding-bottom: 25%;
+   margin-left: 10%;
+   padding-left: 10%;
+}
+
+.batteryPower,
+.emergencyHeat{
+   margin-bottom: -15%;
+   padding-left: 4%;
+}
+
+.co2Alarm{
+   -ms-transform: scale(.74); /* IE 9 */
+   -webkit-transform: scale(.74); /* Chrome, Safari, Opera */
+   transform: scale(.74);
+   margin-left: 2%;
+   margin-top: -20%;
+   margin-bottom: -20%;
+}
+
+svg#Layer_1,
+svg#iconHeat,
+svg#thermoWireless{
+  padding-left: 10%;
+}
+
+
+
+
+
+
+
+}

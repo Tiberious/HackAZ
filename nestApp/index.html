@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>nest</title>
+
+    <!-- CSS FILES -->
+    
+    <!-- main CSS file -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- font Awesome CSS file -->
+    <link href="font-awesome/font-awesome.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+
+    <link <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link href="font-awesome/font-awesome.min.css" rel="stylesheet">
+ 
+    <script src="js/firebase.js" ></script> 
+
+    <script src="js/firebase.js" ></script>   
+
+    
+
+
+
+    <!-- OTHER CODE -->    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  
+  <div id="data" class="invisible">
+    <div class="structure" id="defaultStructure"></div>
+    
+    <div class="thermoTab" >
+
+      <div class="thermoNameBar" id="accordion"></div>
+
+      
+
+        <!-- EMERGENCY HEAT BEGIN-->
+        <svg version="1.1" id="iconHeat" class="emergencyHeat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="289.232px" height="346.5px" viewBox="0 0 289.232 346.5" enable-background="new 0 0 289.232 346.5" xml:space="preserve">
+          <g>
+          <title>Emergency Heat Alarm</title>
+          <g id="svg_1">
+          <path id="svg_24" fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M117.286,24.538
+          c27.673,34.101-13.736,85.819-64.575,172.912C1.87,284.544,115.587,328.444,124.65,329.295c9.062,0.85-44.184-33.28-27.333-85.112
+          c16.853-51.83,57.382-81.171,67.55-120.739C175.036,83.875,89.613-9.563,117.286,24.538z"/>
+          <path id="svg_25" fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M181.782,123.364
+          c2.761,5.61,4.052,15.863,0.986,27.964s-7.357,21.108-16.807,35.858c-9.448,14.748-19.604,24.379-37.074,55.835
+          s18.166,62.495,11.351,51.823c-6.813-10.674,1.44-32.309,12.271-45.397c10.828-13.09,18.133-23.331,25.342-33.888
+          c14.422-21.114,18.186-34.615,18.258-46.324c0.07-11.707-0.07-15.436-4.692-28.025
+          C186.792,128.621,176.266,112.147,181.782,123.364z"/>
+          <path id="svg_26" fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M163.696,321.696
+          c-4.395,7.784-5.647-16.392,2.174-37.321c7.822-20.929,32.513-39.337,43.13-59.135c10.614-19.799,17.319-49.737,8.809-65.666
+          c-8.512-15.927,1.504,1.833,8.678,13.229s11.213,19.771,11.033,38.408c-0.18,18.639-5.049,40.488-37.203,69.062
+          C168.163,308.848,168.091,313.911,163.696,321.696z"/>
+          </g>
+          </g>
+        </svg> <!-- EMERGENCY HEAT END-->
+
+        <!-- THERMO OFFLINE BEGIN-->
+        <svg version="1.1" id="thermoWireless" class="thermoOffLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="289.232px" height="346.5px" viewBox="0 0 289.232 346.5" enable-background="new 0 0 289.232 346.5" xml:space="preserve">
+          <path fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M178.403,275.246
+          c0,18.656-15.098,33.754-33.754,33.754c-18.643,0-33.754-15.098-33.754-33.754c0-18.657,15.112-33.755,33.754-33.755
+          C163.306,241.491,178.403,256.589,178.403,275.246z M66.971,210.275l25.876,21.688c25.811-30.819,77.875-30.819,103.651,0.033
+          l25.91-21.624c-19.349-23.141-47.681-36.393-77.76-36.393C114.587,173.982,86.272,187.201,66.971,210.275z M19.554,161.918
+          l25.02,22.68c25.545-28.217,62.02-44.37,100.076-44.37c38.039,0,74.497,16.153,100.043,44.303l24.986-22.679
+          c-31.94-35.205-77.496-55.378-125.028-55.378C97.083,106.474,51.495,126.714,19.554,161.918z"/>
+        </svg> <!-- THERMO OFFLINE END-->
+
+
+      
+    </div> <!-- END code for thermostat tab-->
+
+     <!-- code for co2 tabs-->
+    <div class="co2Tab">
+      
+      <div class="co2NameBar"></div>
+
+      <div class="co2Icons">
+
+        <!-- SMOKE ALARM BEGIN-->
+        <svg version="1.1" id="Layer_1" class="smokeAlarm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="289.232px" height="346.5px" viewBox="0 0 289.232 346.5" enable-background="new 0 0 289.232 346.5" xml:space="preserve">
+          <g>
+          <title>Smoke Alarm</title>
+          <g id="layer1">
+          <path id="path2244" fill="none" stroke="#000000" stroke-width="12" d="M138.135,20.552c-30.023,31.091,5.176,77.206-9.839,80.834
+          c0,0-18.636-29.538-39.858-26.429c33.082,44.155,13.893,71.827,13.978,71.516C81.706,120.563,55.055,120.005,61,124.186
+          c24.847,17.472,17.083,64.259,17.083,64.259s-26.4-22.799-38.827-10.883c33.748,17.141,19.157,36.791,18.643,60.627
+          c-1.141,47.34,28.484,68.579,33.847,72.028H77.563v10.884h134.083V310.22h-16.584c10.664-4.597,51.229-25.348,54.373-76.171
+          c0,0,9.851-34.427,0.03-46.299c-2.588,10.883-18.151,16.757-18.151,16.757c-4.144,0.519,5.694-24.423,5.694-35.233
+          c0-24.878-6.893-41.524-6.893-41.524s-6.565,34.783-22.095,43.592c-3.117-6.454,19.282-85.536-24.905-99.592
+          c11.39,23.32-1.497,40.519-1.497,40.519s-1.111,11.798-1.552,8.809c-3.384-22.927-23.817-45.081-23.817-45.081
+          S144.902,66.153,138.135,20.552L138.135,20.552z"/>
+          </g>
+          </g>
+        </svg>
+        <!-- SMOKE ALARM END-->
+      
+          <!-- CO2 ALARM BEGIN-->
+          <svg version="1.1" id="Layer_1" class="co2Alarm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="289.232px" height="346.5px" viewBox="0 0 289.232 346.5" enable-background="new 0 0 289.232 346.5" xml:space="preserve">
+            <circle class="outtercircle"fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" cx="144.616" cy="171.25" r="124.5"/>
+            <circle fill="white" stroke="#000000" stroke-width="12" stroke-miterlimit="10" cx="143.616" cy="172.104" r="95.5"/>
+          </svg>
+          <!-- CO2 ALARM END-->
+      
+          <!-- BATTERY POWER BEGIN-->
+          <svg version="1.1" id="Layer_1" class="batteryPower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="289.232px" height="346.5px" viewBox="0 0 289.232 346.5" enable-background="new 0 0 289.232 346.5" xml:space="preserve">
+            <path fill="none" stroke="#000000" stroke-width="15.5193" stroke-miterlimit="10" d="M223.623,304.693
+            c0,11.629-9.427,21.057-21.056,21.057H95.878c-11.629,0-21.057-9.428-21.057-21.057V68.855c0-11.63,9.428-21.057,21.057-21.057
+            h106.688c11.629,0,21.057,9.427,21.057,21.057V304.693L223.623,304.693z"/>
+            <rect x="115.413" y="20.75" width="67.62" height="10.519"/>
+          </svg>
+          <!-- BATTERY POWER END-->
+
+        <!-- CO2 OFFLINE BEGIN-->
+        <svg version="1.1" id="Layer_1" class="co2OffLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="289.232px" height="346.5px" viewBox="0 0 289.232 346.5" enable-background="new 0 0 289.232 346.5" xml:space="preserve">
+          <path fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M178.403,275.246
+          c0,18.656-15.098,33.754-33.754,33.754c-18.643,0-33.754-15.098-33.754-33.754c0-18.657,15.112-33.755,33.754-33.755
+          C163.306,241.491,178.403,256.589,178.403,275.246z M66.971,210.275l25.876,21.688c25.811-30.819,77.875-30.819,103.651,0.033
+          l25.91-21.624c-19.349-23.141-47.681-36.393-77.76-36.393C114.587,173.982,86.272,187.201,66.971,210.275z M19.554,161.918
+          l25.02,22.68c25.545-28.217,62.02-44.37,100.076-44.37c38.039,0,74.497,16.153,100.043,44.303l24.986-22.679
+          c-31.94-35.205-77.496-55.378-125.028-55.378C97.083,106.474,51.495,126.714,19.554,161.918z"/>
+        </svg><!-- CO2 OFFLINE end-->
+      
+      </div> <!-- END code for co2 Icons-->
+    </div> <!-- END code for co2 tab-->
+
+  </div>
+
+  <div id="container">
+      
+    <!-- HEADER i.e. static nest bar-->
+    <header id="fixedBar"> 
+      <img src="images/logo.png" alt="Nest Logo" id="logo">
+    </header>
+
+    
+  </div> <!-- end of container -->
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+  
+  <script type="text/javascript">
+      var token = "c.fMoCEsf8Ts1IhkjMK3S2Y8I6HY9rDlyhKJO99EuUKqpQKsSkMXWA7wIbtL0Vabe6jlANeQEwp2QmeV8o5LzrCwOpkcNUNRydfDjXqpYLnYgivBu7n7CVydjhAkxYDSZjE8BZXMNsb7ZJsb4N";
+
+      var data="";
+  
+      var ref = new Firebase('wss://developer-api.nest.com');
+      ref.auth(token);
+      ref.on('value', function(snapshot) {
+       
+        data = snapshot.val();
+
+        $.each(data.structures, function(id,d){ 
+            $("#data").find(".structure").clone().attr("id",id)
+              .appendTo("#container");
+            $("#"+id).html("<h2>"+d.name+"</h2>");
+        });
+
+        // gets Info for all smoke/ c02 Alarms
+        $.each(data.devices.smoke_co_alarms, function(id,d){ 
+            $("#data").find(".co2Tab").clone().attr("id",id)
+              .appendTo("#"+d.structure_id);
+            $("#"+id).find(".co2NameBar").html("<h2>"+d.name+"</h2>");
+            
+            // fills co2 device tab color based on status
+            if (!d.is_online||d.battery_health!="ok"||d.co_alarm_state!="ok"||d.smoke_alarm_state!="ok"){
+              $("#"+id).find(".co2NameBar").addClass("red");
+            }
+            else{
+              $("#"+id).find(".co2NameBar").addClass("green");
+            }
+
+            // fills co2 svg colors based on status
+            if (!d.is_online){
+              $("#"+id).find(".co2OffLine").find("path").attr("fill","red");
+            }
+            else{
+              $("#"+id).find(".co2OffLine").find("path").attr("fill","#8dd42d");
+            }
+
+            if (d.co_alarm_state!="ok"){
+              $("#"+id).find(".co2Alarm").find(".outtercircle").attr("fill","red");
+            }
+            else{
+              $("#"+id).find(".co2Alarm").find(".outtercircle").attr("fill","#8dd42d");
+            }
+
+            if (d.smoke_alarm_state!="ok"){
+              $("#"+id).find(".smokeAlarm").find("path").attr("fill","red");
+            }
+            else{
+              $("#"+id).find(".smokeAlarm").find("path").attr("fill","#8dd42d");
+            }
+
+            if (d.battery_health!="ok"){
+              $("#"+id).find(".batteryPower").find("path").attr("fill","red");
+            }
+            else{
+              $("#"+id).find(".batteryPower").find("path").attr("fill","#8dd42d");
+            }
+        });
+
+
+        // gets Info for all thermostats
+        $.each(data.devices.thermostats, function(id,d){ 
+            $("#data").find(".thermoTab").clone().attr("id",id)
+              .appendTo("#"+d.structure_id);
+            $("#"+id).find(".thermoNameBar").html("<h2>"+d.name+"</h2>");
+
+            // fills thermostat device tab color based on status
+            if (!d.is_online||d.is_using_emergency_heat){
+              $("#"+id).find(".thermoNameBar").addClass("red");
+            }
+            else{
+              $("#"+id).find(".thermoNameBar").addClass("green");
+            }
+
+            // fills thermostat svg colors based on status
+            if (!d.is_online){
+              $("#"+id).find(".thermoOffLine").find("path").attr("fill","red");
+            }
+            else{
+              $("#"+id).find(".thermoOffLine").find("path").attr("fill","#8dd42d");
+            }
+
+            if (d.is_using_emergency_heat){
+              $("#"+id).find(".emergencyHeat").find("path").attr("fill","red");
+            }
+            else{
+              $("#"+id).find(".emergencyHeat").find("path").attr("fill","#8dd42d");
+            }
+  
+        });
+        
+        
+      });  
+  </script> 
+
+  <script>
+      $(document).on('ready', function(){
+        $("#accordion").accordion();
+      });
+  </script>
+  
+
+  <!-- Site footer -->
+  <footer class="footer">
+      <p>&copy; BNG Productions</p>
+  </footer>
+    
+</body>
+  
+</html>
